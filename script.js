@@ -14,6 +14,9 @@ function createLoadingScreen() {
 
 // Loading Screen Handler
 window.addEventListener('load', function() {
+    // Initialize ads after content is loaded
+    initializeAds();
+    
     // Create loading screen if it doesn't exist
     if (!document.querySelector('.loading-screen')) {
         createLoadingScreen();
@@ -130,6 +133,13 @@ function updateResults(results) {
         item.offsetHeight; // Trigger reflow
         item.style.animation = 'fadeIn 0.5s ease-in-out';
     });
+}
+
+// Initialize ads
+function initializeAds() {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
 }
 
 // Add CSS animation
