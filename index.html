@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7th CPC Salary Calculator 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>7th CPC Salary Calculator 2025</h1>
+        <div class="calculator-card">
+            <div class="input-section">
+                <div class="form-group">
+                    <label for="basicPay">Basic Pay (₹)</label>
+                    <select id="basicPay">
+                        <option value="">Select Basic Pay</option>
+                        <option value="18000">₹18,000</option>
+                        <option value="18500">₹18,500</option>
+                        <option value="19100">₹19,100</option>
+                        <option value="19700">₹19,700</option>
+                        <option value="20300">₹20,300</option>
+                        <option value="20900">₹20,900</option>
+                        <option value="21500">₹21,500</option>
+                        <option value="22100">₹22,100</option>
+                        <option value="22800">₹22,800</option>
+                        <option value="23500">₹23,500</option>
+                        <option value="24200">₹24,200</option>
+                        <option value="24900">₹24,900</option>
+                        <option value="25600">₹25,600</option>
+                        <option value="26400">₹26,400</option>
+                        <option value="27200">₹27,200</option>
+                        <option value="28000">₹28,000</option>
+                        <option value="28800">₹28,800</option>
+                        <option value="29700">₹29,700</option>
+                        <option value="30600">₹30,600</option>
+                        <option value="31500">₹31,500</option>
+                        <option value="32400">₹32,400</option>
+                        <option value="33400">₹33,400</option>
+                        <option value="34400">₹34,400</option>
+                        <option value="35400">₹35,400</option>
+                        <option value="36500">₹36,500</option>
+                        <option value="37600">₹37,600</option>
+                        <option value="38700">₹38,700</option>
+                        <option value="39900">₹39,900</option>
+                        <option value="41100">₹41,100</option>
+                        <option value="42300">₹42,300</option>
+                        <option value="43600">₹43,600</option>
+                        <option value="44900">₹44,900</option>
+                        <option value="46200">₹46,200</option>
+                        <option value="47600">₹47,600</option>
+                        <option value="49000">₹49,000</option>
+                        <option value="50500">₹50,500</option>
+                        <option value="52000">₹52,000</option>
+                        <option value="53600">₹53,600</option>
+                        <option value="55200">₹55,200</option>
+                        <option value="56900">₹56,900</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="payLevel">Pay Level</label>
+                    <select id="payLevel">
+                        <option value="">Select Pay Level</option>
+                        <option value="1">Level 1 (Grade Pay: ₹1800)</option>
+                        <option value="2">Level 2 (Grade Pay: ₹1900)</option>
+                        <option value="3">Level 3 (Grade Pay: ₹2000)</option>
+                        <option value="4">Level 4 (Grade Pay: ₹2400)</option>
+                        <option value="5">Level 5 (Grade Pay: ₹2800)</option>
+                        <option value="6">Level 6 (Grade Pay: ₹4200)</option>
+                        <option value="7">Level 7 (Grade Pay: ₹4600)</option>
+                        <option value="8">Level 8 (Grade Pay: ₹4800)</option>
+                        <option value="9">Level 9 (Grade Pay: ₹5400)</option>
+                        <option value="10">Level 10 (Grade Pay: ₹5400)</option>
+                        <option value="11">Level 11 (Grade Pay: ₹6600)</option>
+                        <option value="12">Level 12 (Grade Pay: ₹7600)</option>
+                        <option value="13">Level 13 (Grade Pay: ₹8700)</option>
+                        <option value="14">Level 14 (Grade Pay: ₹8900)</option>
+                        <option value="15">Level 15 (Grade Pay: ₹10000)</option>
+                        <option value="16">Level 16 (Grade Pay: HAG+)</option>
+                        <option value="17">Level 17 (Grade Pay: Apex)</option>
+                        <option value="18">Level 18 (Grade Pay: Cabinet)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cityCategory">City Category</label>
+                    <select id="cityCategory">
+                        <option value="">Select City Category</option>
+                        <option value="X">X (Metro Cities)</option>
+                        <option value="Y">Y (Large Cities)</option>
+                        <option value="Z">Z (Other Cities)</option>
+                        <option value="NO_HRA">No HRA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="taType">Transport Allowance</label>
+                    <select id="taType">
+                        <option value="">Select TA Type</option>
+                        <option value="3600">TA with DA (₹3600)</option>
+                        <option value="1800">TA with DA (₹1800)</option>
+                        <option value="0">No TA</option>
+                    </select>
+                </div>
+                <button id="calculate" class="calculate-btn">Calculate Salary</button>
+            </div>
+            <div class="result-section">
+                <h2>Salary Breakdown</h2>
+                <div class="result-grid">
+                    <div class="result-item">
+                        <span class="label">Basic Pay:</span>
+                        <span class="value" id="resultBasicPay">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">DA (53%):</span>
+                        <span class="value" id="resultDA">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">HRA:</span>
+                        <span class="value" id="resultHRA">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Transport Allowance:</span>
+                        <span class="value" id="resultTA">₹0</span>
+                    </div>
+                    <div class="result-item total">
+                        <span class="label">Gross Salary:</span>
+                        <span class="value" id="resultGross">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
